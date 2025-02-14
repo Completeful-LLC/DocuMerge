@@ -9,7 +9,9 @@
         ResizeMode="NoResize"  
         Background="Transparent"  
         AllowsTransparency="True"  
-        MouseLeftButtonDown="Window_MouseLeftButtonDown">
+        MouseLeftButtonDown="Window_MouseLeftButtonDown"  
+        MouseWheel="Window_MouseWheel"  
+        KeyDown="Window_KeyDown">
     <Window.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -18,7 +20,7 @@
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Window.Resources>
-    <Border CornerRadius="20">
+    <Border CornerRadius="20" MouseLeftButtonDown="Border_MouseLeftButtonDown">
         <Border.Background>
             <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
                 <GradientStop Color="#2a9d67" Offset="0.25"/>
@@ -79,14 +81,13 @@
             <Border Grid.Row="1" Grid.ColumnSpan="5" Margin="10,0,0,10" Background="#dddddd" CornerRadius="10">
                 <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
                     <WrapPanel Name="pdfPanel" Background="Transparent" Orientation="Horizontal"  
-                               AllowDrop="True"  
-                               Drop="PdfPanel_Drop"  
-                               DragOver="PdfPanel_DragOver"/>
+                                 AllowDrop="True"  
+                                 Drop="PdfPanel_Drop"  
+                                 DragOver="PdfPanel_DragOver"/>
                 </ScrollViewer>
             </Border>
             <!-- Image Count TextBlock -->
-            <TextBlock Grid.Row="2" Name="txtImageCount" FontFamily="/Fonts/#CODE Bold" Text="TOTAL IMAGES: 0" Margin="20,5,0,0" Foreground="#ddd"/>
-
+            <TextBlock Grid.Row="2" Name="txtImageCount" FontFamily="/Fonts/#CODE Bold" Text="TOTAL IMAGES: 0" Margin="20,4,0,0" Foreground="#ddd" FontSize="14"/>
             <!-- Loading Screen -->
             <Grid Name="loadingGrid" Visibility="Collapsed" Background="#80000000">
                 <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
@@ -94,6 +95,8 @@
                     <ProgressBar IsIndeterminate="True" Width="200" Margin="10"/>
                 </StackPanel>
             </Grid>
+            <!-- Placeholder TextBlock -->
+            <TextBlock Grid.Row="2" Name="placeholderTextBlock" Text="Ctrl+ to zoom in and Ctrl- to zoom out" Foreground="#ddd" FontSize="15"  HorizontalAlignment="Right" VerticalAlignment="Top" Visibility="Collapsed"/>
         </Grid>
     </Border>
 </Window>  
