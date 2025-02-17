@@ -25,8 +25,8 @@ namespace PDFCompiler
         private bool showPdfImages;
         private PrintDocument printDocument;
         private double zoomLevel;
+        //New Dictionary
         private Dictionary<string, List<int>> highlightedPages;
-
         public MainWindow()
         {
             InitializeComponent();
