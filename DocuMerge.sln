@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocuMerge", "PDFCompiler\DocuMerge.csproj", "{6BDBBAC7-291F-43D1-BA43-2782DE0F2205}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocuMerge", "DocuMerge.csproj", "{6BDBBAC7-291F-43D1-BA43-2782DE0F2205}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
