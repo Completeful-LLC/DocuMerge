@@ -62,13 +62,13 @@
 	  </Content>
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="itext7" Version="8.0.0" />
-		<PackageReference Include="itext7.bouncy-castle-adapter" Version="8.0.0" />
-		<PackageReference Include="PdfiumViewer" Version="2.12.0" />
+		<PackageReference Include="itext" Version="9.1.0" />
+		<PackageReference Include="itext7.bouncy-castle-adapter" Version="9.1.0" />
+		<PackageReference Include="PdfiumViewer" Version="2.13.0" />
 		<PackageReference Include="PdfiumViewer.Native.x86_64.v8-xfa" Version="2018.4.8.256" />
 		<PackageReference Include="Portable.BouncyCastle" Version="1.9.0" />
 		<PackageReference Include="SharpVectors.Wpf" Version="1.8.4.2" />
-		<PackageReference Include="System.Drawing.Common" Version="6.0.0" />
+		<PackageReference Include="System.Drawing.Common" Version="9.0.2" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Resource Include="images\DOCUMERGE_banner.png">
