@@ -57,6 +57,7 @@ jobs:
 
     env:
       Solution_Name: DocuMerge.sln                        # Replace with your solution name, i.e. MyWpfApp.sln.
+      Wap_Project_Directory: ./
       Wap_Project_Path: DocuMerge.csproj                  # Replace with the path to your Wap project, i.e. MyWpf.App.Package\MyWpfApp.Package.wapproj.
 
     steps:
@@ -99,7 +100,7 @@ jobs:
 
     # Remove the pfx
     - name: Remove the pfx
-      run: Remove-Item -path $env:Wap_Project_Directory\GitHubActionsWorkflow.pfx
+      run: Remove-Item -path $env:\GitHubActionsWorkflow.pfx
 
     # Upload the MSIX package: https://github.com/marketplace/actions/upload-a-build-artifact
     - name: Upload build artifacts
