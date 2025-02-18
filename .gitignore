@@ -57,6 +57,9 @@ dlldata.c
 *.pidb
 *.svclog
 *.scc
+*.vs
+/PDFCompiler/bin/*
+/PDFCompiler/obj/*
 
 # Chutzpah Test files
 _Chutzpah*
@@ -190,3 +193,4 @@ git_stats/*
 StyleCop.Cache
 bin
 obj
+/PDFCompiler/obj/project.nuget.cache
